@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+.navHeader {
+  @apply flex items-center justify-between fixed w-full z-50 bg-gray-100;
+  nav {
+    @apply flex gap-4 p-4;
+  }
+}
+
+
+.hero{
+  @apply flex justify-center items-center w-full h-[100vh] bg-[url('../img/image.jpg')] bg-cover bg-center;
+  h1 {
+    @apply text-white md:text-3xl;
+  }
+}
+
+.cardWrapper {
+  @apply md:flex gap-4 p-9;
+
+
+  > div {
+    @apply shadow-lg
+  }
+
+  h2{
+    @apply md:text-xl font-[600]
+  }
+
+  .img{
+    @apply  md:max-w-[350px] h-[350px] overflow-hidden; 
+    img {
+      @apply w-[100vw] h-[100%] object-cover;
+    }
+  }
+}
+
+form{
+  input {
+    @apply block rounded-sm p-2 w-full mt-1 border;
+  }
+  label{
+    @apply mt-2 block;
+  }
+
+  button {
+    @apply bg-green-300 px-3 py-2 rounded-sm 
+  }
+
+  @apply mx-auto py-40 w-[500px];
+}
+
+.pagesHeader{
+  @apply  bg-gray-200 p-20;
+
+  h1{
+    @apply text-2xl font-bold;
+  }
+  h2{
+    @apply text-lg font-semibold;
+  }
+}
+
+.products{
+  @apply items-center mx-auto md:w-[500px] shadow-lg p-5;
+
+  h3{
+    @apply font-[700] text-cyan-600 text-lg;
+  }
+  
+  h2{
+    @apply font-semibold text-xl;
+  }
+}
+
+footer{
+  @apply bg-gray-800 text-white text-center p-6; 
+}
